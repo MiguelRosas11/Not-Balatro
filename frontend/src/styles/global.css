@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg-a: #22215c;
   --bg-b: #0d7a62;
   --felt: #116b57;
@@ -536,3 +536,64 @@ p {
   }
 }
 
+@media (max-width: 1160px) {
+  .game-page {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+
+  .joker-panel {
+    grid-column: 1 / -1;
+  }
+
+  .joker-list {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+
+  .hand-grid {
+    grid-template-columns: repeat(4, minmax(86px, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .menu-page,
+  .game-page {
+    padding: 14px;
+  }
+
+  .hero-panel {
+    padding: 28px 18px;
+    border-radius: 22px;
+  }
+
+  .difficulty-grid,
+  .game-page,
+  .choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-area {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .game-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .message-pill {
+    width: 100%;
+  }
+
+  .hand-grid {
+    grid-template-columns: repeat(2, minmax(116px, 1fr));
+  }
+
+  .card {
+    min-height: 136px;
+  }
+
+  .controls .btn {
+    flex: 1 1 130px;
+  }
+}
