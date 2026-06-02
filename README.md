@@ -5,96 +5,95 @@ Proyecto final de Sistemas y Tecnologias Web. Not-Balatro es un juego web inspir
 ## Tecnologias usadas
 
 - HTML
-- CSS propio
+- CSS
 - JavaScript
 - React
 - Vite
 - NodeJS
 - Express
 
+## Como correrlo local
+
+Para alguien que acaba de clonar el repositorio:
+
+```bash
+git clone https://github.com/MiguelRosas11/Not-Balatro.git
+cd Not-Balatro/app
+npm.cmd run install:all
+npm.cmd run dev
+```
+
+El comando `npm.cmd run install:all` instala las dependencias del backend y del frontend. Si ya tienes las dependencias instaladas, solo ejecuta:
+
+```bash
+cd Not-Balatro/app
+npm.cmd run dev
+```
+
+El frontend corre en:
+
+```text
+http://localhost:5173
+```
+
+El backend corre en:
+
+```text
+http://localhost:3001
+```
+
 ## Estructura
 
 ```text
-app/
+Not-Balatro/
+├── app/
+│   ├── backend/
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── data/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   ├── utils/
+│   │   │   └── server.js
+│   │   └── package.json
+│   └── package.json
 ├── frontend/
-│   ├── public/
 │   ├── src/
-│   │   ├── assets/
 │   │   ├── components/
 │   │   ├── data/
 │   │   ├── hooks/
 │   │   ├── pages/
-│   │   ├── utils/
 │   │   ├── styles/
+│   │   ├── utils/
 │   │   ├── App.jsx
 │   │   └── main.jsx
+│   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
-├── backend/
-│   ├── src/
-│   │   ├── data/
-│   │   ├── routes/
-│   │   ├── controllers/
-│   │   ├── services/
-│   │   ├── utils/
-│   │   └── server.js
-│   └── package.json
+├── package.json
 ├── README.md
 └── .gitignore
 ```
 
-## Instalacion
+## Scripts disponibles
 
-Desde la carpeta raiz del proyecto:
-
-```bash
-cd app
-npm run install:all
-```
-
-Tambien puedes instalar dependencias por separado.
-
-Instalar dependencias del frontend:
+Desde la carpeta `app`:
 
 ```bash
-cd app/frontend
-npm install
+npm.cmd run install:all
+npm.cmd run dev
+npm.cmd run dev:backend
+npm.cmd run dev:frontend
+npm.cmd run build
 ```
 
-Instalar dependencias del backend:
+Desde la raiz del proyecto tambien se puede ejecutar:
 
 ```bash
-cd app/backend
-npm install
+npm.cmd run install:all
+npm.cmd run dev
+npm.cmd run build
 ```
-
-## Correr frontend
-
-Opcion recomendada desde `app`:
-
-```bash
-npm run dev
-```
-
-Esto abre backend y frontend en ventanas separadas.
-
-Tambien puedes correr cada parte por separado.
-
-```bash
-cd app/frontend
-npm run dev
-```
-
-Abre Vite en `http://localhost:5173`.
-
-## Correr backend
-
-```bash
-cd app/backend
-npm run dev
-```
-
-El backend corre en `http://localhost:3001`.
 
 ## Endpoints backend
 
@@ -137,9 +136,3 @@ El backend corre en `http://localhost:3001`.
 - Pantalla de victoria de ronda.
 - Pantalla de Game Over.
 - Backend Express con datos y endpoints listos.
-
-## Integrantes del equipo
-
-- Integrante 1: ______________________
-- Integrante 2: ______________________
-- Integrante 3: ______________________

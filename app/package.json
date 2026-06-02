@@ -1,0 +1,12 @@
+{
+  "name": "not-balatro-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix ../frontend install",
+    "dev": "start \"Not-Balatro API\" cmd /k \"npm --prefix backend run dev\" && start \"Not-Balatro Frontend\" cmd /k \"npm --prefix ../frontend run dev\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix ../frontend run dev",
+    "build": "npm --prefix ../frontend run build"
+  }
+}
