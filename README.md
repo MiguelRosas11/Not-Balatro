@@ -1,4 +1,5 @@
 # Not-Balatro
+## Miguel Rosas y Samuel Robledo
 
 Proyecto final de Sistemas y Tecnologias Web. Not-Balatro es un juego web inspirado en Balatro, con reglas simplificadas de poker, rondas progresivas, jokers, dificultad, vidas, descartes y una interfaz animada.
 
